@@ -4,8 +4,9 @@
 	"description": "Basic App",
 	"main": "index.js",
 	"scripts": {
-		"start": "webpack-dev-server --open --mode development",
-		"build": "webpack"
+		"build": "webpack",
+		"start": "node app.js",
+		"start-dev": "webpack-dev-server --open --mode development"
 	},
 	"keywords": [],
 	"author": "Jared Spencer",
