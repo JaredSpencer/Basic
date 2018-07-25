@@ -1,14 +1,14 @@
 {
 	"name": "Basic",
 	"version": "1.0.0",
-	"description": "",
+	"description": "Basic App",
 	"main": "index.js",
 	"scripts": {
 		"start": "webpack-dev-server --open --mode development",
 		"build": "webpack"
 	},
 	"keywords": [],
-	"author": "",
+	"author": "Jared Spencer",
 	"license": "ISC",
 	"devDependencies": {
 		"babel": "^6.23.0",

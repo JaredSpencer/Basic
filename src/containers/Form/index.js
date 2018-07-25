@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Input from '../../components/Input';
+import Input from './components/Input';
 
 class FormContainer extends Component {
 	constructor() {
