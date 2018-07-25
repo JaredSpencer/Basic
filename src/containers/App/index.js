@@ -1,6 +1,4 @@
 import React from 'react';
-
-import FormContainer from '../Form';
 import {Container, Button, Icon} from 'semantic-ui-react';
 
 export default function App() {
