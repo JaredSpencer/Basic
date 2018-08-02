@@ -9,6 +9,9 @@ module.exports = {
   devServer: {
     contentBase: './dist'
   },
+  resolve: {
+    extensions: [".ts", ".tsx", ".js", ".json"]
+  },
   module: {
     rules: [
       {
@@ -24,6 +27,13 @@ module.exports = {
             loader: 'html-loader'
           }
         ]
+      }, {
+        test: /\.tsx?$/,
+        loader: "awesome-typescript-loader"
+      }, {
+        enforce: "pre",
+        test: /\.js$/,
+        loader: "source-map-loader"
       }
     ]
   },
