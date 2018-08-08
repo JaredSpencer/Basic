@@ -1,9 +1,7 @@
 import React from 'react';
 import {Container, Button, Icon} from 'semantic-ui-react';
 
-interface Props {
-  greeting: string
-}
+interface Props {greeting: string}
 
 const Navbar = (props: Props) => {
   return (

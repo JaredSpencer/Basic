@@ -1,13 +1,13 @@
 const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 module.exports = {
-  entry: ['./src/index.js'],
+  entry: ['./src/index.tsx'],
   output: {
     path: path.resolve(__dirname, 'build'),
     filename: '[name].js'
   },
   devServer: {
-    contentBase: './dist'
+    contentBase: './build'
   },
   resolve: {
     extensions: [".ts", ".tsx", ".js", ".json"]
@@ -29,7 +29,8 @@ module.exports = {
         ]
       }, {
         test: /\.tsx?$/,
-        loader: "awesome-typescript-loader"
+        loader: "awesome-typescript-loader",
+        exclude: /node_modules/
       }, {
         enforce: "pre",
         test: /\.js$/,
